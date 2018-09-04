@@ -6,12 +6,14 @@ I built a little python application to fetch the JSON every 15 minutes, converts
 
 The application is compiled into Docker image so I drop it onto my Rancher node hosted with Digital Ocean;
 
+URL: https://barstool-rss.willclark.org
+
 Other Notes:
 
 Category 97 is Boston;
 The template does some filtering to remove "Barstool Original" video content which I do not enjoy at all;
 
-URL: https://union.barstoolsports.com/v2/stories/category/97?limit=100&page=1
+JSON Service URL: https://union.barstoolsports.com/v2/stories/category/97?limit=100&page=1
 
 <rss version="2.0">
 	<channel>
