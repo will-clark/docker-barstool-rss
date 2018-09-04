@@ -24,6 +24,8 @@ class RssRefreshThread(object):
     def run(self):
         while True:
 
+            print "refreshing feed"
+            
             response = requests.get(self.url)
             json = response.json()
             
@@ -39,7 +41,7 @@ class RssRefreshThread(object):
             
             time.sleep(self.interval)
 
-refreshRss = RssRefreshThread('https://union.barstoolsports.com/v2/stories/category/97?limit=100&page=1', 30)
+refreshRss = RssRefreshThread('https://union.barstoolsports.com/v2/stories/category/97?limit=100&page=1', 900)
 
 class Handler( SimpleHTTPServer.SimpleHTTPRequestHandler ):
     def do_GET( self ):
