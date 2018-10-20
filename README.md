@@ -30,3 +30,7 @@ JSON Service URL: https://union.barstoolsports.com/v2/stories/category/97?limit=
 		</item>
 	</channel>
 </rss>
+
+
+
+docker create --name barstool-rss -p 8002:8000 docker.willclark.org/barstool-rss:1.3
